@@ -1,7 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styles from './section.module.css'
 
-export interface SectionProps extends HTMLAttributes<HTMLAreaElement> {
+export interface SectionProps extends HTMLAttributes<HTMLElement> {
 }
 
 export const Section = ({
