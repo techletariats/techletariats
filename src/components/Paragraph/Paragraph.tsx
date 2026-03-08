@@ -1,14 +1,10 @@
-import { HTMLAttributes } from 'react';
+import { HTMLAttributes, PropsWithChildren } from 'react';
 import styles from './paragraph.module.css'
-
-export interface ParagraphProps extends HTMLAttributes<HTMLParagraphElement> {
-  onClick?: () => void;
-}
 
 export const Paragraph = ({
   children,
   ...props
-}: ParagraphProps) => {
+}: PropsWithChildren) => {
   return (
     <p
       className={styles.root}
