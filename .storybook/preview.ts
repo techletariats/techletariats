@@ -1,11 +1,21 @@
-import type { Preview } from '@storybook/nextjs-vite'
+import type { Preview } from '@storybook/nextjs-vite';
+// @ts-expect-error css import
+import '../src/styles/globals.css';
+// @ts-expect-error css import
+import './storybook.css';
 
 const preview: Preview = {
   parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [
+        { name: 'dark', value: 'var(--color-background)' },
+      ],
+    },
     controls: {
       matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
+        color: /(background|color)$/i,
+        date: /Date$/i,
       },
     },
 
