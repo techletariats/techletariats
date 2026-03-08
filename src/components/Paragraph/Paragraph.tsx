@@ -1,4 +1,4 @@
-import { HTMLAttributes, PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import styles from './paragraph.module.css'
 
 export const Paragraph = ({

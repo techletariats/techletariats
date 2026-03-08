@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import styles from './Header.module.css'
+import styles from './header.module.css'
 
 export interface HeaderProps extends PropsWithChildren {
   as?: 'h1' | 'h2' | 'h3' | 'h4'
