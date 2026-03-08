@@ -1,18 +1,11 @@
+import { ButtonHTMLAttributes } from 'react';
 import styles from './button.module.css'
-
-export interface ButtonProps {
-  /** What background color to use */
-  backgroundColor?: string;
-  /** How large should the button be? */
-  size?: 'small' | 'medium' | 'large';
-  /** Button contents */
-  label: string;
-  /** Optional click handler */
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 
 export const Button = ({
-  label,
+  children,
   ...props
 }: ButtonProps) => {
   return (
@@ -21,7 +14,7 @@ export const Button = ({
       className={styles.root}
       {...props}
     >
-      {label}
+      {children}
     </button>
   );
 };
