@@ -26,6 +26,9 @@
     /* Border */
     --border-width: 1px;
     --border-style: solid;
+
+    /* Other */
+    --hover-opacity: 0.8;
 }
 
 html,
