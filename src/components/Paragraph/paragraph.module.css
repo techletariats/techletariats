@@ -1,1 +1,4 @@
-.root {}
+.root {
+    color: var(--color-foreground);
+    margin-bottom: 0;
+}

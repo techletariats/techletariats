@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Hello Comrade",
+    children: "Hello comrade",
     href: "#",
   },
 };
