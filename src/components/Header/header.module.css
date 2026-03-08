@@ -1,2 +1,5 @@
 .root {
+        color: var(--color-foreground);
+        margin-top: 0;
+        text-transform: capitalize;
 }

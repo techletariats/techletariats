@@ -1,2 +1,6 @@
 .root {
+    background-color: var(--color-card);
+    border: var(--color-border) var(--border-width) var(--border-style);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
 }
