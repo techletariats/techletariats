@@ -1,20 +1,18 @@
-import { ButtonHTMLAttributes } from 'react';
-import styles from './button.module.css'
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  onClick?: () => void;
+import { AnchorHTMLAttributes } from 'react';
+import styles from 'link.module.css'
+export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
-export const Button = ({
+export const Link = ({
   children,
   ...props
-}: ButtonProps) => {
+}: LinkProps) => {
   return (
-    <button
-      type="button"
+    <a
       className={styles.root}
       {...props}
     >
       {children}
-    </button>
+    </a>
   );
 };

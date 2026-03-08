@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import { Button } from ".";
+import { Link } from ".";
 
 const meta = {
-  title: "Components/Button",
-  component: Button,
+  title: "Components/Link",
+  component: Link,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Link>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

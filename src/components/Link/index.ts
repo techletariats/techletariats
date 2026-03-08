@@ -1,1 +1,1 @@
-export { Button } from "./Link";
+export { Link } from "./Link";
