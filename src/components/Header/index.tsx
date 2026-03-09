@@ -1,4 +1,4 @@
-import { Typography, TypographyProps } from "@/components";
+import { Typography, TypographyProps } from "@/components/Typography";
 
 import { joinTruthy } from "@/utils";
 
