@@ -28,5 +28,29 @@
             "};"
         ],
         "description": "Storybook boilerplate"
+    },
+    "Component": {
+        "scope": "typescriptreact,typescript",
+        "prefix": "!component",
+        "body": [
+            "import { PropsWithChildren } from 'react';",
+            "",
+            "import { joinTruthy } from '@/utils';",
+            "",
+            "import styles from './style.module.css';",
+            "",
+            "export const $1 = ({",
+            "    children,",
+            "    className,",
+            "    ...props",
+            "}: PropsWithChildren) => {",
+            "    return (",
+            "        <div className={joinTruthy(styles.root, className)} {...props}>",
+            "            {children}",
+            "        </div>",
+            "    );",
+            "};"
+        ],
+        "description": "Component boilerplate"
     }
 }

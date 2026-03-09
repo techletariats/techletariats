@@ -1,11 +1,21 @@
-import { PropsWithChildren } from "react";
+import { Typography, TypographyProps } from "@/components/Typography";
+
+import { joinTruthy } from "@/utils";
 
 import styles from "./style.module.css";
 
-export const Paragraph = ({ children, ...props }: PropsWithChildren) => {
+export const Paragraph = ({
+    children,
+    className,
+    ...props
+}: Omit<TypographyProps, "as">) => {
     return (
-        <p className={styles.root} {...props}>
+        <Typography
+            className={joinTruthy(styles.root, className)}
+            as="p"
+            {...props}
+        >
             {children}
-        </p>
+        </Typography>
     );
 };

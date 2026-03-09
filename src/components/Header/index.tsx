@@ -1,16 +1,26 @@
-import { PropsWithChildren } from "react";
+import { Typography, TypographyProps } from "@/components/Typography";
+
+import { joinTruthy } from "@/utils";
 
 import styles from "./style.module.css";
 
-export interface HeaderProps extends PropsWithChildren {
-    as?: "h1" | "h2" | "h3" | "h4";
+export interface HeaderProps extends Omit<TypographyProps, "as"> {
+    as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }
 
-export const Header = ({ children, as = "h1", ...props }: HeaderProps) => {
-    const Tag = as;
+export const Header = ({
+    children,
+    className,
+    as = "h1",
+    ...props
+}: HeaderProps) => {
     return (
-        <Tag className={styles.root} {...props}>
+        <Typography
+            className={joinTruthy(styles.root, className)}
+            as={as}
+            {...props}
+        >
             {children}
-        </Tag>
+        </Typography>
     );
 };
