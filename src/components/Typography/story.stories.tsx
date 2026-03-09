@@ -1,22 +1,22 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-import { Header } from ".";
+import { Typography } from ".";
 
 const meta = {
-    title: "Components/Header",
-    component: Header,
+    title: "Components/Typography",
+    component: Typography,
     parameters: {
         layout: "centered"
     },
     tags: ["autodocs"]
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof Typography>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        children: "Workers of the world unite!",
-        as: "h1"
+        as: "p",
+        children: "Workers of the world unite!"
     }
 };
