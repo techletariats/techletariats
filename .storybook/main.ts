@@ -9,6 +9,9 @@ const config: StorybookConfig = {
         "@storybook/addon-docs"
     ],
     framework: "@storybook/nextjs-vite",
-    staticDirs: ["../public"]
+    staticDirs: ["../public"],
+    features: {
+        sidebarOnboardingChecklist: false
+    }
 };
 export default config;
