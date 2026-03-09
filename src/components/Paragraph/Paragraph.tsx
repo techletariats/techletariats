@@ -1,16 +1,11 @@
-import { PropsWithChildren } from 'react';
-import styles from './paragraph.module.css'
+import { PropsWithChildren } from "react";
 
-export const Paragraph = ({
-  children,
-  ...props
-}: PropsWithChildren) => {
-  return (
-    <p
-      className={styles.root}
-      {...props}
-    >
-      {children}
-    </p>
-  );
+import styles from "./paragraph.module.css";
+
+export const Paragraph = ({ children, ...props }: PropsWithChildren) => {
+    return (
+        <p className={styles.root} {...props}>
+            {children}
+        </p>
+    );
 };

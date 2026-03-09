@@ -1,16 +1,14 @@
-import { AnchorHTMLAttributes, PropsWithChildren } from 'react';
-import styles from './link.module.css'
+import { AnchorHTMLAttributes, PropsWithChildren } from "react";
+
+import styles from "./link.module.css";
 
 export const Link = ({
-  children,
-  ...props
+    children,
+    ...props
 }: PropsWithChildren & AnchorHTMLAttributes<HTMLAnchorElement>) => {
-  return (
-    <a
-      className={styles.root}
-      {...props}
-    >
-      {children}
-    </a>
-  );
+    return (
+        <a className={styles.root} {...props}>
+            {children}
+        </a>
+    );
 };

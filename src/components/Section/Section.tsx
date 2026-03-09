@@ -1,16 +1,14 @@
-import { HTMLAttributes, PropsWithChildren } from 'react';
-import styles from './section.module.css'
+import { HTMLAttributes, PropsWithChildren } from "react";
+
+import styles from "./section.module.css";
 
 export const Section = ({
-  children,
-  ...props
+    children,
+    ...props
 }: PropsWithChildren & HTMLAttributes<HTMLElement>) => {
-  return (
-    <section
-      className={styles.root}
-      {...props}
-    >
-      {children}
-    </section>
-  );
+    return (
+        <section className={styles.root} {...props}>
+            {children}
+        </section>
+    );
 };
