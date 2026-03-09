@@ -1,6 +1,6 @@
 import { HTMLAttributes, PropsWithChildren } from "react";
 
-import styles from "./section.module.css";
+import styles from "./style.module.css";
 
 export const Section = ({
     children,
