@@ -1,4 +1,3 @@
-import { Header, Paragraph, Section } from "@/components";
 import Head from "next/head";
 
 import { Header, Paragraph, Section } from "@/components";
