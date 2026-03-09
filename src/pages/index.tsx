@@ -28,7 +28,7 @@ export function Home() {
                         </Paragraph>
                     </Section>
                     <Section>
-                        <Header as="h2" >Building Collective Power Through Technology</Header>
+                        <Header as="h2">Building Collective Power Through Technology</Header>
                         <Paragraph>
                             Technology has the power to connect people, share knowledge, and
                             strengthen communities — but too often, it's used to divide or
@@ -41,7 +41,7 @@ export function Home() {
                         </Paragraph>
                     </Section>
                     <Section>
-                        <Header as="h2" >Grow Your Technical Skills While Strengthening Community</Header>
+                        <Header as="h2">Grow Your Technical Skills While Strengthening Community</Header>
                         <Paragraph>
                             Learning technical skills shouldn't require thousands of dollars or
                             years of gatekeeping. At Techletariats, we provide guidance, mentorship,
@@ -54,7 +54,7 @@ export function Home() {
                         </Paragraph>
                     </Section>
                     <Section>
-                        <Header as="h2" >Free Technical Support for People-Powered Organizations</Header>
+                        <Header as="h2">Free Technical Support for People-Powered Organizations</Header>
                         <Paragraph>
                             Mutual aid groups do essential work — feeding communities, offering
                             shelter, organizing care — but many lack access to reliable digital
@@ -67,7 +67,7 @@ export function Home() {
                         </Paragraph>
                     </Section>
                     <Section>
-                        <Header as="h2" >Ethical Tech Work That Supports the Collective</Header>
+                        <Header as="h2">Ethical Tech Work That Supports the Collective</Header>
                         <Paragraph>
                             We also take on paid projects for small businesses, cooperatives, and
                             organizations that share our values. When you hire Techletariats, you're
