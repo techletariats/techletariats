@@ -1,16 +1,10 @@
-import { PropsWithChildren } from "react";
-
+import { Paragraph } from "@/components/Paragraph";
 import styles from "./style.module.css";
 
-export interface FooterProps extends PropsWithChildren {
-    as?: "h1" | "h2" | "h3" | "h4";
-}
-
-export const Footer = ({ children, as = "h1", ...props }: FooterProps) => {
-    const Tag = as;
+export const Footer = () => {
     return (
-        <Tag className={styles.root} {...props}>
-            {children}
-        </Tag>
+        <footer className={styles.root}>
+            <Paragraph>Welcome To Techletariats {new Date().getFullYear()}</Paragraph>
+        </footer>
     );
 };
