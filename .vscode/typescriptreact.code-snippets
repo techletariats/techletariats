@@ -1,0 +1,32 @@
+{
+    "Story": {
+        "scope": "typescriptreact,typescript",
+        "prefix": "!story",
+        "body": [
+            "import type { Meta, StoryObj } from '@storybook/nextjs-vite';",
+            "",
+            "import {",
+            "    $1,",
+            "} from '.';",
+            "",
+            "const meta = {",
+            "    title: 'Components/$1',",
+            "    component: $1,",
+            "    parameters: {",
+            "        layout: 'centered'",
+            "    },",
+            "    tags: ['autodocs'],",
+            "} satisfies Meta<typeof $1>;",
+            "",
+            "export default meta;",
+            "type Story = StoryObj<typeof meta>;",
+            "",
+            "export const Default: Story = {",
+            "    args: {",
+            "        children: 'Placeholder'",
+            "    }",
+            "};"
+        ],
+        "description": "Storybook boilerplate"
+    }
+}
