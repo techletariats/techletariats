@@ -1,6 +1,6 @@
 import { AnchorHTMLAttributes, PropsWithChildren } from "react";
 
-import styles from "./link.module.css";
+import styles from "./style.module.css";
 
 export const Link = ({
     children,

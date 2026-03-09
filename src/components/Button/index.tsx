@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from "react";
 
-import styles from "./button.module.css";
+import styles from "./style.module.css";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     onClick?: () => void;

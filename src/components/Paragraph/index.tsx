@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 
-import styles from "./paragraph.module.css";
+import styles from "./style.module.css";
 
 export const Paragraph = ({ children, ...props }: PropsWithChildren) => {
     return (
